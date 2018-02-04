@@ -1,4 +1,3 @@
-# systemInfoReader
 System Info Reader
 ===================
 
