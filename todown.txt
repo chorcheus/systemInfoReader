@@ -1,0 +1,7 @@
+CMakeLists.txt
+include/ftpcheck.h
+include/strjob.h
+src/main.cpp
+src/strjob.cpp
+src/ftpcheck.h
+scripts/cmakeconfig.sh
