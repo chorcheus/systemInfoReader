@@ -4,4 +4,4 @@ include/strjob.h
 src/main.cpp
 src/strjob.cpp
 src/ftpcheck.cpp
-scripts/cmakeconfig.sh
+scripts/cmakeconf.sh
