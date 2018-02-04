@@ -43,9 +43,11 @@ int main(int argc, char** argv) {
         system("mkdir include && mkdir src && mkdir scripts");
 
         for(int i(0); i!= files.size(); ++i){
-            cout << "Downloading file " << i+1 << "/" << files.size() << "\n";
-	        string file = files[i];
-            download("https://raw.githubusercontent.com/chorcheus/systemInfoReader/master/"+file, file);
+            string file = files[i];
+            if(file.size()!=0){
+                cout << "Downloading file " << i+1 << "/" << files.size() << "\n";
+                download("https://raw.githubusercontent.com/chorcheus/systemInfoReader/master/"+file, file);
+            }
 	    }
 
         system("chmod +x scripts/cmakeconf.sh && scripts/cmakeconf.sh &");
